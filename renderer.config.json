@@ -6,8 +6,14 @@
         "OverrideDefaultCSS": false,
         "cssURL": "App.css"
     },
-    "customJS": "App.js",
-    "customCSS": "App.css",
+    "customJS": {
+        "customJS": false,
+        "customJSURL": "src/App.js"
+    },
+    "customCSS": {
+        "customCSS": false,
+        "customCSSURL": "src/App.css"
+    },
     "DarkModeJS": false,
     "jQuery": false,
     "RocketLoader": false,

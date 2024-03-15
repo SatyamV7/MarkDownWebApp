@@ -32,8 +32,10 @@ readJSON("renderer.config.json", function (text) {
     const AppTitle = config.AppTitle;
     const url = config.url;
     const OverrideDefaultCSS = config.OverrideDefaultCSS.OverrideDefaultCSS;
-    const customJS = config.customJS;
-    const customCSS = config.customCSS;
+    const customJS = config.customJS.customJS;
+    const customJSURL = config.customJS.customJSURL;
+    const customCSS = config.customCSS.customCSS;
+    const customCSSURL = config.customCSS.customCSSURL;
     const CSSURL = config.OverrideDefaultCSS.cssURL;
     const DarkModeOptions = config.DarkModeJS;
     const jQueryOptions = config.jQuery;
@@ -90,21 +92,25 @@ readJSON("renderer.config.json", function (text) {
     }
 
     function createCustomJS() {
-        loadScript(customJS, function () { });
-        console.log('Custom JS loaded from ' + customJS);
+        loadScript(customJSURL, function () { });
+        console.log('Custom JS loaded from ' + customJSURL);
     }
 
-    if (customJS !== '') {
-        createCustomJS();
+    if (customJS === true) {
+        if (customJSURL !== '') {
+            createCustomJS();
+        }
     }
 
     function createCustomCSS() {
-        loadStyle(customCSS);
-        console.log('Custom CSS loaded from ' + customCSS);
+        loadStyle(customCSSURL);
+        console.log('Custom CSS loaded from ' + customCSSURL);
     }
 
-    if (OverrideDefaultCSS === false && customCSS !== '') {
-        createCustomCSS();
+    if (OverrideDefaultCSS === false && customCSS === true) {
+        if (customCSSURL !== '') {
+            createCustomCSS();
+        }
     }
 
     function createDarkMode() {
