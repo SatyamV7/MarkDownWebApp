@@ -1,5 +1,9 @@
 # MarkDown
 
+<center>
+    <img src="/assets/Banner.png" width="35%">
+</center>
+
 ## Introduction
 This is a sample Markdown file demonstrating basic writing and formatting syntax.
 
