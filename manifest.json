@@ -1,6 +1,6 @@
 {
     "name": "MarkDown Web App",
-    "description": "Single page web app which renders ui using markdown",
+    "description": "Single page web app which renders UI using MarkDown.",
     "lang": "en",
     "dir": "ltr",
     "short_name": "MD App",
