@@ -28,8 +28,8 @@ function loadStyle(url) {
 
 readJSON("renderer.config.json", function (text) {
     const config = JSON.parse(text);
-    const AppIcon = config.AppIcon;
-    const AppTitle = config.AppTitle;
+//    const AppIcon = config.AppIcon;
+//    const AppTitle = config.AppTitle;
     const url = config.url;
     const OverrideDefaultCSS = config.OverrideDefaultCSS.OverrideDefaultCSS;
     const customJS = config.customJS.customJS;
@@ -53,7 +53,7 @@ readJSON("renderer.config.json", function (text) {
             const html = parser.makeHtml(data);
             document.querySelector('#root').innerHTML = html;
         })
-
+/*
     function createAppIcon() {
         const link = document.createElement('link');
         link.rel = 'shortcut icon';
@@ -74,7 +74,7 @@ readJSON("renderer.config.json", function (text) {
     if (AppTitle !== '') {
         appTitle();
     }
-
+*/
     function defaultCSS() {
         loadStyle('src/index.css');
     }
