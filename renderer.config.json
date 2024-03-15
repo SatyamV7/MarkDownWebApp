@@ -1,0 +1,18 @@
+{
+    "AppIcon": "favicon.svg",
+    "AppTitle": "MarkDown Web App",
+    "url": "src/md/MARKDOWN.md",
+    "OverrideDefaultCSS": {
+        "OverrideDefaultCSS": false,
+        "cssURL": "App.css"
+    },
+    "customJS": "App.js",
+    "customCSS": "App.css",
+    "DarkModeJS": false,
+    "jQuery": false,
+    "RocketLoader": false,
+    "PWA": false,
+    "PWAConfig": {
+        "manifestURL": "manifest.json"
+    }
+}

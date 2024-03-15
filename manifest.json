@@ -1,0 +1,32 @@
+{
+    "name": "MarkDown Web App",
+    "description": "Single page web app which renders ui using markdown",
+    "lang": "en",
+    "dir": "ltr",
+    "short_name": "MD App",
+    "start_url": "/",
+    "scope": "/",
+    "display": "standalone",
+    "orientation": "any",
+    "theme_color": "#1296db",
+    "background_color": "#1296db",
+    "prefer_related_applications": false,
+    "display_override": [
+        "window-controls-overlay",
+        "standalone"
+    ],
+    "icons": [
+        {
+            "src": "/assets/manifest/icon.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any"
+        },
+        {
+            "src": "/assets/manifest/maskable.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
