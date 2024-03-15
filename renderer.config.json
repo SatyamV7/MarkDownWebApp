@@ -1,7 +1,7 @@
 {
     "AppIcon": "favicon.svg",
     "AppTitle": "MarkDown Web App",
-    "url": "src/md/MARKDOWN.md",
+    "MarkDownURL": "src/md/MARKDOWN.md",
     "OverrideDefaultCSS": {
         "OverrideDefaultCSS": false,
         "cssURL": "App.css"

@@ -30,7 +30,7 @@ readJSON("renderer.config.json", function (text) {
     const config = JSON.parse(text);
 //    const AppIcon = config.AppIcon;
 //    const AppTitle = config.AppTitle;
-    const url = config.url;
+    const MarkDownURL = config.MarkDownURL;
     const OverrideDefaultCSS = config.OverrideDefaultCSS.OverrideDefaultCSS;
     const customJS = config.customJS.customJS;
     const customJSURL = config.customJS.customJSURL;
@@ -43,7 +43,7 @@ readJSON("renderer.config.json", function (text) {
     const PWAOptions = config.PWA;
     const manifestURL = config.PWAConfig.manifestURL;
 
-    fetch(url)
+    fetch(MarkDownURL)
         .then(function (res) {
             return res.text();
         })
