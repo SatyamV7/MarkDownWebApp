@@ -1,247 +1,127 @@
-MarkDown<a name="TOP"></a>
-===================
+# MarkDown
 
-- - - - 
-# Heading 1 #
+## Introduction
+This is a sample Markdown file demonstrating basic writing and formatting syntax.
 
-    Markup :  # Heading 1 #
+## Headings
+# A first-level Heading
+## A second-level Heading
+### A third-level Heading
 
-    -OR-
-
-    Markup :  ============= (below H1 text)
-
-## Heading 2 ##
-
-    Markup :  ## Heading 2 ##
-
-    -OR-
-
-    Markup: --------------- (below H2 text)
-
-### Heading 3 ###
-
-    Markup :  ### Heading 3 ###
-
-#### Heading 4 ####
-
-    Markup :  #### Heading 4 ####
-
-
-Common text
-
-    Markup :  Common text
-
-_Emphasized text_
-
-    Markup :  _Emphasized text_ or *Emphasized text*
-
-~~Strikethrough text~~
-
-    Markup :  ~~Strikethrough text~~
-
-__Strong text__
-
-    Markup :  __Strong text__ or **Strong text**
-
-___Strong emphasized text___
-
-    Markup :  ___Strong emphasized text___ or ***Strong emphasized text***
-
-[Named Link](http://www.google.com/ "Named link title") and http://www.google.com/ or <http://example.com/>
-
-    Markup :  [Named Link](http://www.google.com/ "Named link title") and http://www.google.com/ or <http://example.com/>
-
-[heading-1](#heading-1 "Goto heading-1")
-    
-    Markup: [heading-1](#heading-1 "Goto heading-1")
-
-Table, like this one :
-
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
-
+***Syntax***:
 ```
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell
+# A first-level Heading
+## A second-level Heading
+### A third-level Heading
 ```
 
-Adding a pipe `|` in a cell :
+## Styling text
+You can indicate emphasis with bold, italic, strikethrough, subscript, or superscript text in comment fields and .md files.
+| Style                  | Syntax                              | Example                                           | Output                                 |
+|------------------------|-------------------------------------|---------------------------------------------------|----------------------------------------|
+| Bold                   | ** ** or __ __                      | ```**This is bold text**```                       | **This is bold text**                  |
+| Italic                 | * * or _ _ &emsp;&emsp;&emsp;&emsp; | ```_This text is italicized_```                   | _This text is italicized_              |
+| Strikethrough          | ~~ ~~                               | ```~~This was mistaken text~~ ```                 | ~~This was mistaken text~~             |
+| Bold and nested italic | ** ** and _ _                       | ```**This text is _extremely_ important**```      | **This text is _extremely_ important** |
+| All bold and italic    | *** ***                             | ```***All this text is important***```            | ***All this text is important***       |
+| Subscript              | &lt;sub&gt; &lt;/sub&gt;            | This is a &lt;sub&gt;subscript&lt;/sub&gt; text   | This is a <sub>subscript</sub> text    |
+| Superscript            | &lt;sup&gt; &lt;/sup&gt;            | This is a &lt;sup&gt;superscript&lt;/sup&gt; text | This is a <sup>superscript</sup> text  |
 
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | \|
+## Quoting text
+You can quote text with a ```>```.
+***Syntax***:
+```> Text that is a quote```
 
+Text that is not a quote
+
+> Text that is a quote
+
+## Lists
+### Unordered List
+- Item 1
+- Item 2
+  - Sub-item A
+  - Sub-item B
+    - Sub-sub-item I
+- Item 3
+
+***Syntax***:
 ```
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  |  \| 
+- Item 1
+- Item 2
+  - Sub-item A
+  - Sub-item B
+    - Sub-sub-item I
+- Item 3
 ```
+### Ordered List
+1. First item
+2. Second item
+   1. Sub-item A
+   2. Sub-item B
+3. Third item
 
-Left, right and center aligned table
-
-Left aligned Header | Right aligned Header | Center aligned Header
-| :--- | ---: | :---:
-Content Cell  | Content Cell | Content Cell
-Content Cell  | Content Cell | Content Cell
-
+***Syntax***:
 ```
-Left aligned Header | Right aligned Header | Center aligned Header
-| :--- | ---: | :---:
-Content Cell  | Content Cell | Content Cell
-Content Cell  | Content Cell | Content Cell
-```
-
-`code()`
-
-    Markup :  `code()`
-
-```javascript
-    var specificLanguage_code = 
-    {
-        "data": {
-            "lookedUpPlatform": 1,
-            "query": "Kasabian+Test+Transmission",
-            "lookedUpItem": {
-                "name": "Test Transmission",
-                "artist": "Kasabian",
-                "album": "Kasabian",
-                "picture": null,
-                "link": "http://open.spotify.com/track/5jhJur5n4fasblLSCOcrTp"
-            }
-        }
-    }
-```
-
-    Markup : ```javascript
-             ```
-
-* Bullet list
-    * Nested bullet
-        * Sub-nested bullet etc
-* Bullet list item 2
-
-~~~
- Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
-
--OR-
-
- Markup : - Bullet list
-              - Nested bullet
-                  - Sub-nested bullet etc
-          - Bullet list item 2 
-~~~
-
-1. A numbered list
-    1. A nested numbered list
-    2. Which is numbered
-2. Which is numbered
-
-~~~
- Markup : 1. A numbered list
-              1. A nested numbered list
-              2. Which is numbered
-          2. Which is numbered
-~~~
-
-- [ ] An uncompleted task
-- [x] A completed task
-
-~~~
- Markup : - [ ] An uncompleted task
-          - [x] A completed task
-~~~
-
-- [ ] An uncompleted task
-    - [ ] A subtask
-
-~~~
- Markup : - [ ] An uncompleted task
-              - [ ] A subtask
-~~~
-
-> Blockquote
->> Nested blockquote
-
-    Markup :  > Blockquote
-              >> Nested Blockquote
-
-_Horizontal line :_
-- - - -
-
-    Markup :  - - - -
-
-_Image with alt :_
-
-![picture alt](http://via.placeholder.com/200x150 "Title is optional")
-
-    Markup : ![picture alt](http://via.placeholder.com/200x150 "Title is optional")
-
-Foldable text:
-
-<details>
-  <summary>Title 1</summary>
-  <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
-</details>
-<details>
-  <summary>Title 2</summary>
-  <p>Content 2 Content 2 Content 2 Content 2 Content 2</p>
-</details>
-
-    Markup : <details>
-               <summary>Title 1</summary>
-               <p>Content 1 Content 1 Content 1 Content 1 Content 1</p>
-             </details>
-
-```html
-<h3>HTML</h3>
-<p> Some HTML code here </p>
+1. First item
+2. Second item
+   1. Sub-item A
+   2. Sub-item B
+3. Third item
 ```
 
-Link to a specific part of the page:
+## Links
+You can create links like [this one](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) using the following ***syntax***:
+```[Alt Text](URL)```
 
-[Go To TOP](#TOP)
-   
-    Markup : [text goes here](#section_name)
-              section_title<a name="section_name"></a>    
+## Images
+![GitHub Logo](https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png)
+***Syntax***:
+```![Alt Text](Image Source)```
 
-Hotkey:
+## Code
+Inline code can be highlighted like `this`.
+***Syntax***: ```‎`this`‎```
+For blocks of code, use triple backticks:
+```python
+def greet():
+    print("Hello, world!")
+```
+***Syntax***:
+```
+```‎
+def greet():
+    print("Hello, world!")
+‎```
+```
 
-<kbd>⌘F</kbd>
+## Task List
+- [x] Task 1
+- [ ] Task 2
+- [ ] Task 3
 
-<kbd>⇧⌘F</kbd>
+***Syntax***:
+```
+- [x] Task 1
+- [ ] Task 2
+- [ ] Task 3
+```
 
-    Markup : <kbd>⌘F</kbd>
+## Table
+| Name  | Age | Gender |
+|-------|-----|--------|
+| John  | 25  | Male   |
+| Alice | 30  | Female |
 
-Hotkey list:
+***Syntax***:
+```
+| Name  | Age | Gender |
+|-------|-----|--------|
+| John  | 25  | Male   |
+| Alice | 30  | Female |
+```
 
-| Key | Symbol |
-| --- | --- |
-| Option | ⌥ |
-| Control | ⌃ |
-| Command | ⌘ |
-| Shift | ⇧ |
-| Caps Lock | ⇪ |
-| Tab | ⇥ |
-| Esc | ⎋ |
-| Power | ⌽ |
-| Return | ↩ |
-| Delete | ⌫ |
-| Up | ↑ |
-| Down | ↓ |
-| Left | ← |
-| Right | → |
+## Emojis
+You can also use emojis! :smiley: :rocket: :tada:
 
-Emoji:
-
-:exclamation: Use emoji icons to enhance text. :+1:
-
-    Markup : Code appears between colons :EMOJICODE:
+***Syntax***: `:smiley: :rocket: :tada:`

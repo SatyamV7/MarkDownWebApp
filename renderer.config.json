@@ -11,13 +11,13 @@
         "customJSURL": "src/App.js"
     },
     "customCSS": {
-        "customCSS": false,
+        "customCSS": true,
         "customCSSURL": "src/App.css"
     },
     "DarkModeJS": false,
     "jQuery": false,
     "RocketLoader": false,
-    "PWA": false,
+    "PWA": true,
     "PWAConfig": {
         "manifestURL": "manifest.json"
     }
